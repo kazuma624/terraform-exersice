@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "dev-hoda"
+    workspaces {
+      name = "learn-terraform-aws"
+    }
+  }
+
   required_providers {
     aws = {
       # hashicorp/aws は registry.terraform.io/hashicorp/aws の省略形
